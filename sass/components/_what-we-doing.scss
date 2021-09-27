@@ -1,0 +1,36 @@
+.work-section__position {
+  position: relative;
+}
+.work-section__position--content {
+  color: var(--primary-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-section__position--frame {
+  background-color: rgba(47, 48, 58, 0.8);
+  letter-spacing: $secondary-letter-spacing;
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  right: 0;
+}
+
+.work-section__title--primary,
+.section-team__title {
+  font-size: 36px;
+  line-height: 1.16;
+}
+.work-section {
+  padding-top: 0;
+}
+.work-section__list {
+  display: flex;
+  margin-top: 50px;
+}
+.work-section__item {
+  &:not(:first-child) {
+    margin-left: auto;
+  }
+}

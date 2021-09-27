@@ -1,0 +1,223 @@
+/*----------- модальне вікно ----------*/
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop {
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 250ms linear, visibility 250ms;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 40px;
+  width: 528px;
+  height: 581px;
+
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-title {
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: $secondary-letter-spacing;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form,
+label {
+  &:nth-child(2) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: var(--title-text-color);
+  }
+}
+.position-modal input,
+.span:nth-child(2) {
+  width: 448px;
+  height: 40px;
+
+  margin: 0;
+  padding: 0;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.position-modal input {
+  padding-left: 42px;
+  cursor: pointer;
+}
+.position-modal input {
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    cursor: pointer;
+  }
+}
+.position-modal {
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+textarea {
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    cursor: pointer;
+  }
+}
+textarea {
+  padding: 0;
+  padding: 12px 16px;
+
+  resize: none;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.position-modal {
+  position: relative;
+}
+.position-modal-icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+}
+.user-contacts {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+.user-contact-list {
+  margin-bottom: 4px;
+}
+.contacts-comment {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-bottom: 30px;
+
+  font-size: $primary-font-size;
+  line-height: 1.71;
+  letter-spacing: $secondary-letter-spacing;
+}
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+.icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--pimary-text-color);
+  border-radius: 2px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:checked + .icon {
+  border-color: transparent;
+  background-color: #2196f3;
+  background-image: url(./img.css/svg-img/icon-check1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  background-position: center;
+}
+.deal {
+  color: var(--accent-color);
+}
+.button-send {
+  display: flex;
+  justify-content: center;
+}
+.btn-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: $secondary-font-size;
+  line-height: 1.9;
+  letter-spacing: $third-letter-spacing;
+
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+
+  cursor: pointer;
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  cursor: pointer;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  background-color: var(--primary-bg-color);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}

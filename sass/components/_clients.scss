@@ -1,0 +1,43 @@
+/* ------------Постійні клієнти---------- */
+.section-clients__logo {
+  display: flex;
+}
+.section-clients__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.section-clients__list {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: $secondary-letter-spacing;
+}
+.section-clients__item {
+  width: 170px;
+  height: 92px;
+}
+
+.section-clients__interactive {
+  fill: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  width: 100%;
+  height: 100%;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}

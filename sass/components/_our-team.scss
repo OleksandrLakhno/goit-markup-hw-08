@@ -1,0 +1,68 @@
+/* наша команда */
+.section-team__list {
+  display: flex;
+  margin-top: 50px;
+  font-size: $secondary-font-size;
+  line-height: 1.18;
+  letter-spacing: $secondary-letter-spacing;
+}
+.section-team {
+  background-color: #f5f4fa;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-bg-color);
+  }
+}
+.section-team__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.section-team__item {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.section-team__name {
+  color: var(--pimary-text-color);
+  font-weight: $primary-font-weight;
+}
+.sectin-team__box {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-box-item > ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  padding-top: 16px;
+}
+.team-box-list {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.section-team__work {
+  margin: 0;
+  margin-top: 10px;
+
+  color: var(--title-text-color);
+}
