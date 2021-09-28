@@ -1,11 +1,7 @@
 /* ------------Постійні клієнти---------- */
 .section-clients__logo {
   display: flex;
-}
-.section-clients__item {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  flex-wrap: wrap;
 }
 .section-clients__list {
   margin-bottom: 50px;
@@ -15,12 +11,56 @@
   line-height: 1.16;
   text-align: center;
   letter-spacing: $secondary-letter-spacing;
+
+  @media screen and(min-width:480px) and(max-width:1199px) {
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 15px;
+  }
 }
 .section-clients__item {
   width: 170px;
   height: 92px;
 }
+.section-clients__item {
+  @media screen and(min-width:480px) and(max-width:767px) {
+    width: calc((100% - 2 * 15px) / 2);
+    margin: 15px;
 
+    &:nth-child(2n + 1) {
+      margin-left: 0;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+    width: 226px;
+
+    &:nth-child(3n + 1) {
+      margin-left: 0;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and(min-width:1200px) {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}
 .section-clients__interactive {
   fill: #afb1b8;
   display: flex;
