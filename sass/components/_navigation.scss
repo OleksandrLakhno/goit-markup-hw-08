@@ -53,12 +53,12 @@
   }
 }
 .mobile-nav {
-  @media screen and(min-width:480px) and(max-width:767px) {
+  @media screen and(max-width:767px) {
     margin-top: 302px;
   }
 }
 .mobile-nav__link--accent {
-  @media screen and(min-width:480px) and(max-width:767px) {
+  @media screen and(max-width:767px) {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
@@ -67,12 +67,12 @@
   }
 }
 .mobile-nav__list {
-  @media screen and(min-width:480px) and(max-width:767px) {
+  @media screen and(max-width:767px) {
     margin-bottom: 32px;
   }
 }
 .mobile-nav__link {
-  @media screen and(min-width:480px) and(max-width:767px) {
+  @media screen and(max-width:767px) {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
