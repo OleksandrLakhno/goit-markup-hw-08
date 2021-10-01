@@ -35,7 +35,7 @@
   margin-right: 10px;
   fill: currentColor;
 }
-@media screen and(min-width:480px) and(max-width:767px) {
+@media screen and(max-width:767px) {
   .site-nav,
   .contacts {
     display: none;
@@ -47,7 +47,10 @@
   }
 }
 .menu-toggle {
-  @media screen and(min-width:480px) and(max-width:767px) {
+  @media screen and(max-width:767px) {
+    position: absolute;
+    top: 22px;
+    right: 23px;
     border: none;
     padding: 0;
     background-color: transparent;
