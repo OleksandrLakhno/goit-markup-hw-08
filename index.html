@@ -64,7 +64,7 @@
                         </li>
                     </ul>
                     <ul class="mobile-socials">
-                        <li class="mobile-socials__list"><a class="mobile-socials__link" href="">Instagram</a></li>
+                        <li class="mobile-socials__list"><a class="mobile-socials__link " href="">Instagram</a></li>
                         <li class="mobile-socials__list"><a class="mobile-socials__link" href="">Twitter</a></li>
                         <li class="mobile-socials__list"><a class="mobile-socials__link" href="">Facebook</a></li>
                         <li class="mobile-socials__list"><a class="mobile-socials__link" href="">LinkedIn</a></li>
@@ -72,7 +72,7 @@
                 </div>
                 <ul class="site-nav list">
                     <li class="site-nav__item">
-                        <a class="studio-primary" href="">
+                        <a class="studio-primary line" href="">
                             Студія</a>
                     </li>
                     <li class="site-nav__item">
@@ -196,7 +196,14 @@
                 <h2 class="section-team__title">Наша команда</h2>
                 <ul class="section-team__list list">
                     <li class="section-team__item">
-                        <img src="./img/img(3).jpg" alt="Фото чоловіка в окулярах" width="270" height="260">
+                        <picture>
+                            <source 
+                            srcset="./img/img-min1x.jpg 1x, ./img/img(1)-min2x.jpg 2x"media="(min-width:1200px)"
+                            >
+                            <source srcset="./img/img-tablet/img-min1x.jpg 1x, ./img/img-tablet/img-min2x.jpg 2x" media="(min-width:768px)" >
+                            <source srcset="./img/img-mobile/img-min1x.jpg 1x, ./img/img-mobile/img-min2x.jpg 2x" media="(max-width:767px)" >
+                            <img src="./img/img-mobile/img-min1x.jpg" alt="Фото чоловіка в окулярах">
+                        </picture>
                         <div class="sectin-team__box">
                             <h3 class="section-team__name">Ігор Демяненко</h3>
                             <p class="section-team__work ">Product Designer</p>
@@ -235,7 +242,12 @@
                         </div>
                     </li>
                     <li class="section-team__item">
-                        <img src="./img/img(4).jpg" alt="Жінка" width="270" height="260">
+                        <picture>
+                            <source srcset="./img/img(1)-min1x.jpg 1x, ./img/img(2)-min2x.jpg 2x"media="(min-width:1200px)">
+                            <source srcset="./img/img-tablet/img(1)-min1x.jpg 1x, ./img/img-tablet/img(1)-min2x.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/img-mobile/img(1)-min1x.jpg 1x, ./img/img-mobile/img(1)-min2x.jpg 2x" media="(max-width:767px)">
+                            <img src="./img/img-mobile/img(1)-min1x.jpg" alt="Жінка" >
+                        </picture>
                         <div class="sectin-team__box">
                             <h3 class="section-team__name">Ольга Репина</h3>
                             <p class="section-team__work">Frontend Developer</p>
@@ -274,7 +286,12 @@
                         </div>
                     </li>
                     <li class="section-team__item">
-                        <img src="./img/img(5).jpg" alt="Чоловік в блій рубашці" width="270" height="260">
+                        <picture>
+                        <source srcset="./img/img(2)-min1x.jpg 1x, ./img/img(3)-min2x.jpg 2x" media="(min-width:1200px)">
+                        <source srcset="./img/img-tablet/img(2)-min1x.jpg 1x, ./img/img(2)-min2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./img/img-mobile/img(2)-min1x.jpg 1x, ./img/img(2)-min2x.jpg 2x" media="(max-width:767px)">
+                            <img src="./img/img-mobile/img(2)-min1x.jpg" alt="Чоловік в блій рубашці">
+                        </picture>
                         <div class="sectin-team__box">
                             <h3 class="section-team__name">Миколай Тарасов</h3>
                             <p class="section-team__work">Marketing</p>
@@ -314,7 +331,13 @@
                         
                     </li>
                     <li class="section-team__item">
-                        <img src="./img/img(6).jpg" alt="Чоловік в чорній футболці і окулярах" width="270" height="260">
+                        <picture>
+                            <source srcset="./img/img(3)-min1x.jpg 1x, ./img/img(3)-min2x.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/img-tablet/img(3)-min1x.jpg 1x, ./img/img-tablet/img(3)-min2x.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/img-mobile/img(3)-min1x.jpg 1x, ./img/img-mobile/img(3)-min2x.jpg 2x" media="(max-width:767px)">
+                            <img src="./img/img-mobile/img(3)-min1x.jpg" alt="Чоловік в чорній футболці і окулярах">
+                        </picture>
+                        
                         <div class="sectin-team__box">
                             <h3 class="section-team__name">Михайло Єрмаков</h3>
                             <p class="section-team__work">UI Designer</p>

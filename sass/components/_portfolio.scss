@@ -32,7 +32,7 @@
   line-height: $secondary-line-height;
   letter-spacing: $secondary-letter-spacing;
 
-  @media screen and(min-width:480px) and(max-width:767px) {
+  @media screen and(max-width:767px) {
     flex-wrap: wrap;
   }
   @media screen and(min-width:768px) and(max-width:1199px) {
@@ -44,7 +44,7 @@
   }
 }
 .all-btn {
-  @media screen and(min-width:480px) and(max-width:767px) {
+  @media screen and(max-width:767px) {
     margin-right: 8px;
     &:nth-child(3) {
       margin-right: 0;
@@ -102,7 +102,7 @@
   flex-wrap: wrap;
   margin-top: 50px;
 
-  @media screen and(min-width:480px) and(max-width:767px) {
+  @media screen and(max-width:767px) {
     margin-top: 40px;
   }
   @media screen and(min-width:768px) and(max-width:1199px) {
@@ -114,7 +114,7 @@
 }
 .first-section {
   width: 370px;
-  @media screen and(min-width:480px) and(max-width:767px) {
+  @media screen and(max-width:767px) {
     width: 450px;
     &:not(:last-child) {
       margin-bottom: 30px;
