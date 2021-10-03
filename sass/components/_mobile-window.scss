@@ -48,15 +48,18 @@
   }
 }
 .mobile-socials__link {
-  @media screen and(max-width:767px) {
+  font-weight: 500;
+  font-size: 13px;
+  margin: 0 5px;
+
+  color: var(--accent-color);
+
+  text-decoration: none;
+  @media screen and(min-width:480px) and(max-width:767px) {
     display: flex;
-    font-weight: 500;
+
     font-size: 18px;
     line-height: 22px;
-
-    color: var(--accent-color);
-
-    text-decoration: none;
 
     margin: 0 10px;
   }

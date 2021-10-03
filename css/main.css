@@ -1815,16 +1815,20 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+.mobile-socials__link {
+  font-weight: 500;
+  font-size: 13px;
+  margin: 0 5px;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .mobile-socials__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    color: var(--accent-color);
-    text-decoration: none;
     margin: 0 10px;
   }
 }
