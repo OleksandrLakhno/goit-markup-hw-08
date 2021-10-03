@@ -27,7 +27,8 @@ p {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -169,21 +170,13 @@ img {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .contacts {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -310,8 +303,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .section-article {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/img/img-tablet/Header-img-min1x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/img-tablet/Header-img-min1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/img-tablet/Header-img-min1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img-tablet/Header-img-min1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -323,14 +316,14 @@ img {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-article {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/img/img-tablet/Header-img-min2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/img-tablet/Header-img-min2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/img-tablet/Header-img-min2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img-tablet/Header-img-min2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .section-article {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/img/Img-bg-desctop1x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/Img-bg-desctop1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/Img-bg-desctop1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img-bg-desctop1x.jpg);
     background-repeat: no-repeat;
     background-size: 1600px 600px;
     background-position: center;
@@ -341,8 +334,8 @@ img {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-article {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/img/Img-bg-desctop2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/Img-bg-desctop2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/Img-bg-desctop2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img-bg-desctop2x.jpg);
   }
 }
 
@@ -406,7 +399,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -696,7 +689,7 @@ img {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
 
@@ -796,17 +789,20 @@ img {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .addres-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer-addres {
     text-align: center;
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-addres {
-    margin-left: 76px;
-    margin-right: 165px;
-    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -850,13 +846,6 @@ img {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .join {
-    margin-right: 89px;
-    text-align: center;
-  }
-}
-
 .social-join {
   color: var(--primary-bg-color);
   margin-bottom: 20px;
@@ -1377,6 +1366,9 @@ textarea {
   }
   .all-btn:not(:last-child) {
     margin-bottom: 15px;
+  }
+  .all-btn:nth-last-child(2) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {

@@ -40,15 +40,21 @@
   background-color: #2f303a;
   padding: 60px 0;
 }
+.addres-container {
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .footer-addres {
   @media screen and(max-width:767px) {
     text-align: center;
     margin-bottom: 60px;
   }
   @media screen and(min-width:768px) and(max-width:1199px) {
-    margin-left: 76px;
-    margin-right: 165px;
-    text-align: center;
+    // margin-left: 76px;
+    // margin-right: 165px;
+    // text-align: center;
   }
   @media screen and(min-width:1200px) {
     flex-grow: 1;
@@ -74,8 +80,8 @@
     margin-bottom: 60px;
   }
   @media screen and(min-width:768px) and(max-width:1199px) {
-    margin-right: 89px;
-    text-align: center;
+    // margin-right: 89px;
+    // text-align: center;
   }
 }
 .social-join {
