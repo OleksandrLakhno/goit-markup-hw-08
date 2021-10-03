@@ -16,6 +16,7 @@
   font-size: $secondary-font-size;
   line-height: 1.18;
   letter-spacing: $secondary-letter-spacing;
+  margin: -15px;
 
   @media screen and(min-width:480px) and(max-width:767px) {
     margin-top: 30px;
@@ -59,18 +60,18 @@
     }
   }
   @media screen and(min-width:768px) and(max-width:1199px) {
-    width: calc((100% - 2 * 15px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
 
-    &:nth-child(2n + 1) {
-      margin-left: 0;
-    }
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
+    // &:nth-child(2n + 1) {
+    //   margin-left: 0;
+    // }
+    // &:nth-child(2n) {
+    //   margin-right: 0;
+    // }
+    // &:nth-last-child(-n + 2) {
+    //   margin-bottom: 0;
+    // }
   }
 }
 .section-team__item {

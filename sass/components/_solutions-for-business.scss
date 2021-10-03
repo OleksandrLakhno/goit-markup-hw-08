@@ -34,7 +34,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/./img/img-mobile/Header-img1x.jpg);
+      url(./img/img-mobile/Header-img1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,7 +58,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/./img/img-tablet/Header-img-min1x.jpg);
+      url(./img/img-tablet/Header-img-min1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -155,37 +155,16 @@
   }
 }
 .section-solutions__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-  @media screen and(max-width:767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
   @media screen and(min-width:768px) and(max-width:1199px) {
-    width: calc((100% - 2 * 15px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
-
-    &:nth-child(2n + 1) {
-      margin-left: 0;
-    }
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
-    &:nth-child(-n + 2) {
-      margin-top: 0;
-    }
   }
 }
 .section-solutions__list {
   @media screen and(min-width:768px) and(max-width:1199px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
   @media screen and(min-width:1200px) {
     display: flex;
