@@ -791,6 +791,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .addres-container {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
