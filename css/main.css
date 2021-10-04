@@ -1347,6 +1347,7 @@ textarea {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .filters {
     margin-left: 64px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1357,6 +1358,7 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -1438,7 +1440,6 @@ textarea {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 50px;
 }
 @media screen and (max-width: 767px) {
   .flex-section {
@@ -1453,6 +1454,12 @@ textarea {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex-section {
+    margin: -15px;
   }
 }
 
@@ -1469,29 +1476,14 @@ textarea {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .first-section {
-    width: calc((100% - 2 * 15px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
-  }
-  .first-section:nth-child(2n+1) {
-    margin-left: 0;
-  }
-  .first-section:nth-child(2n) {
-    margin-right: 0;
-  }
-  .first-section:nth-child(-n+2) {
-    margin-top: 0;
-  }
-  .first-section:nth-last-child(1) {
-    margin-right: 0;
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .first-section {
-    margin-left: 30px;
-  }
-  .first-section:nth-child(3n+1) {
-    margin-left: 0;
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
   }
 }
 
